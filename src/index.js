@@ -141,7 +141,6 @@ client.on('interactionCreate', async interaction => {
         }
     }
 });
-q
 client.on('disconnect', (event) => {
     console.warn('Disconnected from Discord:', event);
     consoleChannel.send('disocnnected')
