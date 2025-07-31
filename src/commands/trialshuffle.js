@@ -14,7 +14,7 @@ module.exports = {
        guildChannels.updateId();
        let categoryId = guildChannels.state.id;
 
-       // Add verification for category
+
        try {
            const category = await message.guild.channels.fetch(categoryId);
            if (!category || category.type !== ChannelType.GuildCategory) {
@@ -24,8 +24,7 @@ module.exports = {
            console.error('Category fetch error:', error);
            return message.channel.send(`Error: Could not find category with ID ${categoryId}. Please check the configuration.`);
        }
-
-       // Rest of your code...
+       
 
         const positions = {
             setter: [],

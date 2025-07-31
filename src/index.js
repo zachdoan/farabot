@@ -75,7 +75,7 @@ client.on('interactionCreate', async interaction => {
 
             const displayNameInput = new TextInputBuilder()
                 .setCustomId('display_name')
-                .setLabel("Your DISPLAY name:")
+                .setLabel("Your ROBLOX DISPLAY name:")
                 .setStyle(TextInputStyle.Short)
                 .setRequired(true);
 
